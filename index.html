@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+        .footer_container_top{
+            width: 60%;
+            height: 150px;
+            /* border: 1px solid blue; */
+            display: flex;
+            margin: auto;
+            background-color: #3f414d;
+        }
+        #body_container_top{
+            width:100%;
+            height: 150px;
+            background-color: #3f414d;
+        }
+        #body_container_middle{
+            width: 100%;
+            height: 400px;
+            background-color: #8c8d94;
+        }
+        .footer_container_m1{
+            width: 60%;
+            height: 400px;
+            /* border: 1px solid red; */
+            background-color: #8c8d94;
+            display: flex;
+            margin: auto;
+        }
+        .footer_container_m2{
+            width: 60%;
+            height: 250px;
+            /* border: 1px solid green; */
+            display: flex;
+            margin: auto;
+        }
+        .footer_container_bottom{
+            width: 100%;
+            height: 80px;
+            /* border: 1px solid yellowgreen; */
+            background-color: #fc2779;
+        }
+        #container_top1{
+             width:33%;
+             height: 100%;
+             margin: auto;
+             /* border: 1px solid; */
+        }
+        #container_top2{
+             width:33%;
+             height: 100%;
+             margin: auto;
+             /* border: 1px solid; */
+        }
+        #container_top3{
+             width:33%;
+             height: 100%;
+             margin: auto;
+             /* border: 1px solid; */
+        }
+        #email_div{
+            width: 80%;
+            height: 48%;
+            /* border: 2px solid; */
+            margin: auto;
+            display: flex;
+        }
+        #email_input{
+            width: 80%;
+            height: 44%;
+            /* border: 2px solid; */
+            margin: auto;
+            
+        }
+        #email_png{
+           width: 11%;
+           height: 22%;
+           margin-top: 25px;
+           
+        }
+        .enter_email{
+            width: 60%;
+            height: 35px;
+            color: white;
+            background-color: transparent;
+             border-top: none;
+             border-left: none;
+             border-right: none;
+             border-bottom: 1px solid white;
+        }
+        #send{
+            width: 60px;
+            height: 40px;
+            margin-left: 8px;
+            border: 1px solid white;
+            border-radius: 3px;
+            background-color: transparent;
+            color: white;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        ::placeholder{
+            color: white;
+            padding: 5px;
+        }
+        .top2{
+            width: 80%;
+            height: 48%;
+            /* border: 2px solid rebeccapurple; */
+            margin: auto;
+            display: flex;
+        }
+        .top2_2{
+            width: 80%;
+            height: 48%;
+            /* border: 2px solid rebeccapurple; */
+            margin: auto;
+            display: flex;
+        }
+        #cell_png{
+            width: 11%;
+           height: 37%;
+           margin-top: 20px;
+        }
+        #app_store{
+            width:46%;
+            height: 80%;
+            margin: auto;
+        }
+        #helpline{
+            width: 80%;
+            height: 48%;
+            /* border: 2px solid rebeccapurple; */
+            margin: auto;
+            display: flex;
+        }
+        #timing{
+            width: 85%;
+            height: 48%;
+            /* border: 2px solid rebeccapurple; */
+            margin: auto;
+        }
+        #phone_png{
+            width: 9%;
+           height: 34%;
+           margin-top: 25px;
+        }
+      #m1_1{
+          width: 20%;
+          height: 100%;
+      }
+      #m1_2{
+          width: 20%;
+          height: 100%;
+      }
+      #m1_3{
+          width: 20%;
+          height: 100%;
+      }
+      #m1_4{
+          width: 20%;
+          height: 100%;
+      }
+      #m1_5{
+          width: 20%;
+          height: 100%;
+      }
+      div>ul{
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+          font-weight: 500;
+          font-size: small;
+          color: white;
+      }
+      div>ul:hover{
+          cursor: pointer;
+          color: deeppink;
+      }
+      #ul_head{
+          margin: 20px 0 40px 0;
+      }
+      #ul_head2{
+          margin: 20px 0 40px 0;
+          font-weight: 700;
+      }
+      #m2_1{
+          width: 20%;
+          height: 100%;
+          /* border: 1px solid; */
+          display: flex;
+      }
+      #m2_2{
+          width: 20%;
+          height: 100%;
+          /* border: 1px solid; */
+          display: flex;
+      }
+      #m2_3{
+          width: 20%;
+          height: 100%;
+          /* border: 1px solid; */
+          display: flex;
+      }
+      #m2_4{
+          width: 20%;
+          height: 100%;
+          /* border: 1px solid; */
+          display: flex;
+      }
+      #m2_5{
+          width: 20%;
+          height: 100%;
+          /* border: 1px solid; */
+      }
+      .foot_img_{
+        padding: 40px;
+      }
+      #support_love{
+          width: 100%;
+          height: 40%;
+          /* border: 1px solid; */
+          justify-content: center;
+      }
+      #footer_social{
+          width: 100%;
+          height: 60%;
+          /* border: 1px solid; */
+          display: flex;
+      }
+      
+      #bottom_1{
+          width: 40%;
+          height: 50%;
+          display: flex;
+          margin: auto;
+          /* border: 2px solid; */
+      }
+      #bottom_2{
+          width: 30%;
+          height: 48%;
+          margin: auto 0 0 800px;    
+          color: white;
+          font-size: small;
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      }
+      .social_icons{
+          width: 20%;
+          height: 100%;
+          /* border: 1px solid; */
+          margin-left: 5%;
+      }
+    </style>
+</head>
+<body>
+    <div id="body_container_top">
+        <div class="footer_container_top">
+            <div id="container_top1">
+                <div id="email_div">
+                    <img id="email_png" src="vectorpaint_1.png">
+                    <h6 style="font-family: sans-serif;width:80%;height: 100%; margin-left: 2%; color: white;">GET SPECIAL DISCOUNT ON YOUR INBOX</h6>
+                </div>
+                <div id="email_input">
+                    <input type="text" class="enter_email" placeholder="Your Email"> 
+                    <button id="send">SEND</button>
+                </div>
+            </div>
+            <div id="container_top2">
+                <div class="top2">
+                     <img id="cell_png" src="vectorpaint_2.png" alt="">
+                     <h6 style="font-family: sans-serif;width:80%;height: 100%; margin-left: 5%; color: white;">EXPERIENCE THE NYKAA MOBILE APP</h6>
+                </div>
+                <div class="top2_2">
+                    <img id="app_store" src="app_icon_d.png" alt="">
+                    <img id="app_store" src="app_icon_d2.png" alt="">
+                </div>
+            </div>
+            <div id="container_top3">
+                <div id="helpline">
+                    <img id="phone_png" src="vectorpaint_3.png" alt="">
+                    <h5 style="font-family: sans-serif;width:85%;height: 100%; margin-left: 5%; color: white;">FOR ANY HELP YOU MAY CALL US AT 1800-267-4444</h5>
+                </div>
+                <div id="timing">
+                    <h6 style="font-family: sans-serif;width:100%;height: 100%; margin-left: 5%; color: white;">(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</h6>
+                </div>
+            </div>
+      </div>
+    </div>
+    <!-- <div class="footer_container_top">
+           <div id="container_top1">
+               <div id="email_div">
+                   <img id="email_png" src="vectorpaint_1.png">
+                   <h6 style="font-family: sans-serif;width:80%;height: 100%; margin-left: 2%; color: white;">GET SPECIAL DISCOUNT ON YOUR INBOX</h6>
+               </div>
+               <div id="email_input">
+                   <input type="text" class="enter_email" placeholder="Your Email"> 
+                   <button id="send">SEND</button>
+               </div>
+           </div>
+           <div id="container_top2">
+               <div class="top2">
+                    <img id="cell_png" src="vectorpaint_2.png" alt="">
+                    <h6 style="font-family: sans-serif;width:80%;height: 100%; margin-left: 5%; color: white;">EXPERIENCE THE NYKAA MOBILE APP</h6>
+               </div>
+               <div class="top2_2">
+                   <img id="app_store" src="app_icon_d.png" alt="">
+                   <img id="app_store" src="app_icon_d2.png" alt="">
+               </div>
+           </div>
+           <div id="container_top3">
+               <div id="helpline">
+                   <img id="phone_png" src="vectorpaint_3.png" alt="">
+                   <h5 style="font-family: sans-serif;width:85%;height: 100%; margin-left: 5%; color: white;">FOR ANY HELP YOU MAY CALL US AT 1800-267-4444</h5>
+               </div>
+               <div id="timing">
+                   <h6 style="font-family: sans-serif;width:100%;height: 100%; margin-left: 5%; color: white;">(Monday to Saturday, 8AM to 10PM and Sunday, 10AM to 7PM)</h6>
+               </div>
+           </div>
+     </div> -->
+     <div id="body_container_middle">
+        <div class="footer_container_m1">
+            <div id="m1_1">
+                      <ul id="ul_head"><img style="width:70px;height:20px;" src="vectorpaint.png" alt=""></ul>
+                      <ul>WHO ARE WE?</ul>
+                      <ul>CAREERS</ul>
+                      <ul>AUTHENTICITY</ul>
+                      <ul>PRESS</ul>
+                      <ul>TESTIMONIALS</ul>
+                      <ul>NYKAA CSR</ul>
+                      <ul>RESPONSIBLE DISCLOSURE</ul>
+                      <ul>INVESTOR RELATIONS</ul>
+            </div>
+            <div id="m1_2">
+                <ul id="ul_head2">HELP</ul>
+                <ul>CONTACT US</ul>
+                <ul>FREQUENTLY ASKED QUESTIONS</ul>
+                <ul>STORE LOCATOR</ul>
+                <ul>CANCELLATION & RETURN</ul>
+                <ul>SHIPPING & DELIVERY</ul>
+                <ul>SELL ON NYKAA</ul>
+            </div>
+            <div id="m1_3">
+                <ul id="ul_head2">INSPIRE ME</ul>
+                <ul>BEAUTY BOOK</ul>
+                <ul>NYKAA TV</ul>
+                <ul>NYKAA NETWORK</ul>
+                <ul>BUYING GUIDES</ul>
+            </div>
+            <div id="m1_4">
+                <ul id="ul_head2">QUICK LINKS</ul>
+                <ul>OFFER ZONE</ul>
+                <ul>NEW LAUNCHES</ul>
+                <ul>NYKAA MAN</ul>
+                <ul>NYKAA FASHION</ul>
+                <ul>NYKAA PRO</ul>
+                <ul>NYKAA FEMINA BEAUTY AWARDS WINNERS 2019</ul>
+                <ul>SITEMAP</ul>
+            </div>
+            <div id="m1_5">
+                <ul id="ul_head2">TOP CATEGORIES</ul>
+                <ul>MAKEUP</ul>
+                <ul>SKIN</ul>
+                <ul>HAIR</ul>
+                <ul>PERSONAL CARE</ul>
+                <ul>APPLIANCES</ul>
+                <ul>MOM AND BABY</ul>
+                <ul>WELLNESS</ul>
+                <ul>FRAGRANCE</ul>
+                <ul>NATURAL</ul>
+                <ul>LUXE</ul>
+            </div>
+       </div>
+     </div>
+     <!-- <div class="footer_container_m1">
+         <div id="m1_1">
+                   <ul id="ul_head"><img style="width:70px;height:20px;" src="vectorpaint.png" alt=""></ul>
+                   <ul>WHO ARE WE?</ul>
+                   <ul>CAREERS</ul>
+                   <ul>AUTHENTICITY</ul>
+                   <ul>PRESS</ul>
+                   <ul>TESTIMONIALS</ul>
+                   <ul>NYKAA CSR</ul>
+                   <ul>RESPONSIBLE DISCLOSURE</ul>
+                   <ul>INVESTOR RELATIONS</ul>
+         </div>
+         <div id="m1_2">
+             <ul id="ul_head2">HELP</ul>
+             <ul>CONTACT US</ul>
+             <ul>FREQUENTLY ASKED QUESTIONS</ul>
+             <ul>STORE LOCATOR</ul>
+             <ul>CANCELLATION & RETURN</ul>
+             <ul>SHIPPING & DELIVERY</ul>
+             <ul>SELL ON NYKAA</ul>
+         </div>
+         <div id="m1_3">
+             <ul id="ul_head2">INSPIRE ME</ul>
+             <ul>BEAUTY BOOK</ul>
+             <ul>NYKAA TV</ul>
+             <ul>NYKAA NETWORK</ul>
+             <ul>BUYING GUIDES</ul>
+         </div>
+         <div id="m1_4">
+             <ul id="ul_head2">QUICK LINKS</ul>
+             <ul>OFFER ZONE</ul>
+             <ul>NEW LAUNCHES</ul>
+             <ul>NYKAA MAN</ul>
+             <ul>NYKAA FASHION</ul>
+             <ul>NYKAA PRO</ul>
+             <ul>NYKAA FEMINA BEAUTY AWARDS WINNERS 2019</ul>
+             <ul>SITEMAP</ul>
+         </div>
+         <div id="m1_5">
+             <ul id="ul_head2">TOP CATEGORIES</ul>
+             <ul>MAKEUP</ul>
+             <ul>SKIN</ul>
+             <ul>HAIR</ul>
+             <ul>PERSONAL CARE</ul>
+             <ul>APPLIANCES</ul>
+             <ul>MOM AND BABY</ul>
+             <ul>WELLNESS</ul>
+             <ul>FRAGRANCE</ul>
+             <ul>NATURAL</ul>
+             <ul>LUXE</ul>
+         </div>
+    </div> -->
+    <div class="footer_container_m2">
+           <div id="m2_1">
+               <div>
+                   <img class="foot_img_" src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Free-shipping.svg" alt="">
+               </div>
+               <div>
+                   <h4 style="margin-top: 40px;font-family: sans-serif;color: #3f414d">FREE SHIPPING</h4>
+                   <span style="font-family: sans-serif;font-size: small; color: #8c8d94;">
+                       for orders above
+                       <br>
+                       INR 299
+                   </span>
+               </div>
+           </div>
+           <div id="m2_2">
+               <div>
+                   <img class="foot_img_" src="https://adn-static2.nykaa.com/media/wysiwyg/2021/return_accepted.svg" alt="">
+               </div>
+               <div>
+                   <h4 style="margin-top: 40px;font-family: sans-serif;color: #3f414d">EASY RETURN</h4>
+                   <span style="font-family: sans-serif;font-size: small; color: #8c8d94;">15 Day Easy Returns For Most Products</span>
+               </div>
+           </div>
+           <div id="m2_3">
+               <div>
+                   <img class="foot_img_" src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Authenticity.svg" alt="">
+               </div>
+               <div>
+                   <h4 style="margin-top: 40px;font-family: sans-serif;color: #3f414d">AUTHENTIC PRODUCTS</h4>
+                   <span style="font-family: sans-serif;font-size: small; color: #8c8d94;">Sourced Directly from Brands/ Authorised Distributors</span>
+               </div>
+           </div>
+           <div id="m2_4">
+               <div>
+                   <img class="foot_img_" src="https://adn-static2.nykaa.com/media/wysiwyg/2021/Brands.svg" alt="">
+               </div>
+               <div>
+                   <h4 style="margin-top: 40px;font-family: sans-serif;color: #3f414d">2400+ BRANDS</h4>
+                   <span style="font-family: sans-serif;font-size: small; color: #8c8d94;">Well Curated 1.9Lakh + Product</span>
+               </div>
+           </div>
+           <div id="m2_5">
+               <div id="support_love">
+                   <h6 style="font-size: small; font-family: sans-serif; font-weight: 700;">SHOW US SOME LOVE ❤ ON SOCIAL MEDIA</h6>
+               </div>
+               <div id="footer_social">
+                  <div class="social_icons">
+                      <a href="https://www.instagram.com/mynykaa/?ref=badge">
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt="">
+                      </a>
+                      <!-- <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-instagram-filled.svg" alt=""> -->
+                  </div>
+                  <div class="social_icons">
+                      <a href="https://www.facebook.com/MyNykaa">
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-facebook-filled.svg" alt="">
+                      </a>
+                      <!-- <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-facebook-filled.svg" alt=""> -->
+                  </div>
+                  <div class="social_icons">
+                      <a href="https://www.youtube.com/channel/UCoaH2UtB1PsV7av17woV1BA">
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt="">
+                      </a>
+                      <!-- <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-youtube-filled.svg" alt=""> -->
+                  </div>
+                  <div class="social_icons">
+                      <a href="https://twitter.com/MyNykaa">
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt="">
+                      </a>
+                      <!-- <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-twitter-filled.svg" alt=""> -->
+                  </div>
+                  <div class="social_icons">
+                      <a href="https://www.pinterest.com/mynykaa/">
+                        <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt="">
+                      </a>
+                      <!-- <img src="https://images-static.naikaa.com/media/wysiwyg/2021/icons/ic_social-pinterest-filled.svg" alt=""> -->
+                  </div>
+               </div>
+           </div>
+    </div>
+    <div class="footer_container_bottom">
+            <div id="bottom_1">
+                <ul>TERMS & CONDITION</ul>
+                <ul>SHIPPING POLICY</ul>
+                <ul>CANCELLATION POLICY</ul>
+                <ul>PRIVACY POLICY</ul>
+            </div>
+            <div id="bottom_2">© 2022 Nykaa E-Retail Pvt. Ltd. All Rights Reserved.</div>
+    </div>
+</body>
+</html>
