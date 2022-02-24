@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #nav1 {
+            background-image: url("https://adn-static1.nykaa.com/media/wysiwyg/2021/topstrips18.jpg");
+            height: 30px;
+            padding: 5px;
+            justify-content: flex-end;
+            align-items: center ;
+            display: flex;
+        }
+
+        #nav1>i {
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        #na3>i {
+            margin-left: 5px;
+            flex: 10%;
+        }
+
+        #na1>img {
+            width: 80px;
+            margin-left: 20px;
+            margin-right: 0px;
+        }
+
+        #search-text {
+            margin-left: 0px;
+            background-color: rgb(244, 244, 244);
+            border: 0px;
+            width: 200px;
+            height: 40px;
+            margin: auto;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            padding-left: 10px;
+        }
+
+        #search-button {
+            margin-left: 0px;
+            background-color: rgb(244, 244, 244);
+            border: 0px;
+            cursor: pointer;
+            height: 40px;
+            margin: auto;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            padding: 1%;
+            padding-left: 5%;
+        }
+
+        #na2 {
+            display: flex;
+        }
+
+        #nav2 {
+            border-bottom: 0.1px solid black;
+            display: flex;
+            flex-wrap: wrap;
+            font-family: monospace;
+            font-weight: 100;
+            padding: 10px 30px;
+            justify-content: space-between;
+            flex-flow: row;
+            height: 60px;
+        }
+
+        #na1 {
+            display: flex;
+            margin-left: 0px;
+            margin-top: 10px;
+            justify-content: space-evenly;
+        }
+
+        #na3>i {
+            margin-top: 10px;
+            font-size: medium;
+        }
+
+        #nav2>div>h2 {
+            margin-top: 12px;
+            margin-left: 15px;
+            font-weight: lighter;
+            font-size: 15px;  
+            cursor: pointer;
+        }
+
+        .nav-card {
+            display: flex;
+            margin: 0px 10px;
+            cursor: pointer;
+        }
+        header{
+            position: fixed;
+            width: 100% ;
+            background-color: white;
+        }
+
+        .nav-card>img {
+            width: 20px;
+        }
+
+        .space {
+            font-weight: 900;
+            font-size: large;
+            margin: 0px 10px;
+        }
+        #linkto{
+            padding-top: 150px;
+        }
+        #linkto>a{
+            cursor: pointer; 
+            text-decoration: none;  
+            color: black ;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div id="navbar">
+        <header>
+            <!------firt line------>
+            <div id="nav1">
+                <i class=""></i>
+                <div class="nav-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/15/15874.png" alt="">
+                    <p> Get App </p>
+                </div>
+                <div class="nav-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/684/684809.png" alt="">
+                    <p> <span class="space"> | </span> Store & Events </p>
+                </div>
+                <div class="nav-card">
+                    <img src="https://cdn-icons-png.flaticon.com/128/1332/1332708.png" alt="">
+                    <p> <span class="space"> | </span> Gift Card </p>
+                </div>
+                <div class="nav-card">
+                    <img src="https://cdn-icons.flaticon.com/png/128/1620/premium/1620741.png?token=exp=1645528937~hmac=c985fd42f74db425716d0dd6b0b7ac3e"
+                        alt="">
+                    <p> <span class="space"> | </span> Help </p>
+                </div>
+            </div>
+            <!-------second line------->
+            <div id="nav2">
+                <div id="na1">
+                    <img src="https://gumlet.assettype.com/afaqs%2F2020-06%2Fe58cd071-0f27-4002-ba7a-14a60cca9a3c%2Fnykaa.png?format=webp&dpr=1.0&q=70&w=700"
+                        alt="">
+                    <h2> CATEGORIES </h2>
+                    <h2> BRANDS </h2>
+                    <h2> NYKAA FASHION </h2>
+                    <h2> BEAUTY ADVICE </h2>
+                    <h2> NYKAA NETWORK </h2>
+                </div>
+                <div id="na2">
+                    <button id="search-button"> <i class="fa fa-search"></i> </button>
+                    <input type="text" id="search-text" placeholder="Search on Nykaa">
+                </div>
+                <div id="na3">
+                    <i class="fa fa-user" style="font-size:20px"> <span>Account </span></i>
+                    <i class="fa fa-shopping-bag" style="font-size:20px"> </i>
+                </div>
+        </header>
+        <!--------third line----------->  
+        <div id="linkto">
+            <a href=""> Makeup </a>
+            <a href=""> Skin </a>
+            <a href=""> Hair </a>
+            <a href=""> Appliances </a>
+            <a href=""> Personal Care </a>
+            <a href=""> Natural </a>
+            <a href=""> Mom & Baby </a>
+            <a href=""> Health & Wellness </a>
+            <a href=""> Men </a>
+            <a href=""> Fragrance </a>
+            <a href=""> LUXE </a>
+        </div>
+    </div>
+    <i class="fa fa-user" style="font-size:20px" ></i>
+  <!----------above this position is fixed ---------> 
+</body>
+
+</html>
+
+
+<script>
+
+</script>
+

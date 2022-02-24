@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+           background-color: rgb(244,244,244);
+           display: flex;
+        }
+        #main{ 
+            padding: 30px 10px ;
+            width: 490px ;
+            text-align: center;
+            margin: auto;   
+            margin-top: 30px;
+            font-family: Bahnschrift ; 
+            font-weight: bolder;
+            border-radius: 10px ;
+            background-color: rgb(255, 255, 255);
+            box-shadow: rgba(240, 46, 78, 0.4) -5px 5px, rgba(240, 46, 88, 0.3) -10px 10px, rgba(240, 46, 88, 0.2) -15px 15px, rgba(240, 46, 78, 0.1) -20px 20px, rgba(240, 46, 72, 0.05) -25px 25px;   
+        }
+        #bag2{
+            padding: 30px 10px ;
+            width: 490px ;
+            text-align: center;
+            margin: auto;   
+            margin-top: 30px;
+            border-radius: 10px ;    
+            display: table-column; 
+            background-color: rgb(255, 255, 255);  
+            box-shadow: rgba(240, 46, 46, 0.4) 5px 5px, rgba(240, 46, 46, 0.3) 10px 10px, rgba(240, 46, 46, 0.2) 15px 15px, rgba(240, 46, 46, 0.1) 20px 20px, rgba(240, 46, 46, 0.05) 25px 25px;
+        }
+        #bag2>img{
+            width: 100% ;
+            margin-bottom: 40px;
+        }
+        #par1>img{
+            width: 50%;
+            align-items: center;  
+        }
+        td{
+            /* border: 2px solid blue;  */
+            text-align: left;
+            padding: 20px; 
+        }
+        .a1{
+            width: 240px; 
+            background-color: rgba(255, 255, 255, 0.781);   
+            border: 1px solid lightgray ;    
+            border-radius: 7px ; 
+            padding: 5px 10px ;
+            
+        }
+        table{
+            margin: auto;
+            width: 100% ; 
+        }
+        #spa{
+            padding: 0px 20px; 
+        }
+        #signin{ 
+            margin-left: 60px ;
+            padding: 8px 40px ;    
+            border: 0px ; 
+            color: white ;   
+            font-weight: bolder; 
+            font-family: sans-serif ; 
+            background-color: rgb(255, 0, 43);
+            border-radius: 10px ;  
+            cursor: pointer ;    
+            box-shadow: rgba(255, 64, 64, 0.534) 0px 54px 55px, rgba(236, 33, 33, 0.39) 0px -12px 30px, rgba(240, 37, 37, 0.445) 0px 4px 6px, rgba(231, 36, 36, 0.205) 0px 12px 13px, rgba(231, 36, 36, 0.335) 0px -3px 5px;
+        }
+        td{
+            text-align: left;
+            /* padding: 30px 0px; */
+        }
+
+
+    </style>
+</head>
+<body>
+    <div id="main">
+        <div id="par1">
+            <img src="https://contactworlds.com/wp-content/uploads/2021/06/Nykaa-India.jpg" alt="">  
+        </div>
+        <h1> SIGN UP </h1>
+        <div id="par2">
+            <form> 
+                <table>
+                    <tr>
+                        <td> Name : </td>
+                        <td> <input type="text" id="name" class="a1" required ></td>
+                    </tr>
+                    <tr>
+                        <td> Email : </td>
+                        <td> <input type="email" id="email"  class="a1" required > </td>
+                    </tr>
+                    <tr>
+                        <td> Password : </td>
+                        <td> <input type="password" id="pass" class="a1" required ></td>
+                    </tr>
+                    <tr>
+                        <td> Mobile no. :</td>
+                        <td> <input type="number" id="mobile" class="a1" required > </td>
+                    </tr>
+                    <tr>
+                        <td> Address :</td>
+                        <td> <input type="text" id="address" class="a1" required > </td>
+                    </tr>
+                    <tr>
+                        <td> pincode :</td>
+                        <td> <input type="text" id="pin" class="a1" required > </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <input type="radio" id="term" required> I ACCEPT THE PRIVACY STATEMENT </td>
+                    </tr>    
+                    <tr>
+                        <td></td>
+                        <td><button id="signin"> Sign in </button> </td>
+                    </tr>  
+                </table>
+            </form>
+        </div>
+    </div>
+    <div id="bag2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwV1lQOiFlZv6B9a71V_xFZmsh7kZPyHVkog&usqp=CAU" alt="">    
+
+            <img src="https://i.ytimg.com/vi/txt2PxQDWgk/maxresdefault.jpg" alt="">     
+    </div>
+</body>
+</html>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+<script> 
+
+    document.querySelector("#signin").addEventListener("click", put)
+
+    let userStack = JSON.parse(localStorage.getItem("userDataBase")) || [];
+    function put(e){
+        e.preventDefault() ;  
+
+        var re1 = document.querySelector("#name").value ;  
+        var re2 = document.querySelector("#email").value ;    
+        var re3 = document.querySelector("#pass").value ;   
+        var re4 = document.querySelector("#mobile").value ;
+        var re5 = document.querySelector("#address").value ; 
+        var re6 = document.querySelector("#pin").value ; 
+        var re7 = document.querySelector("term") ;
+        // console.log(re1,re2,re3,re4)
+
+        if(re1==""|| re2=="" || re3=="" || re4=="" || re5=="" || re6=="" ){
+            swal({
+                title: "fill all ",
+                text: "please fill all information",
+                icon: "info",
+                button: "Ok",
+            });
+        }
+
+        else{
+            let userData = {
+                name : re1 ,
+                email : re2 , 
+                passward : re3 , 
+                mobile : re4,
+                address : re5 , 
+                pincode : re6 ,   
+            }
+            // console.log(userData); 
+            userStack.push(userData);  
+
+            localStorage.setItem("userDataBase",JSON.stringify(userStack))   
+            alert("Signin successful")
+            window.location.href="login.html"
+        }
+    }
+</script>
+

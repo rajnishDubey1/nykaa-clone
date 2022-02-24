@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title> 
+    <style>
+        body{
+            background-color: rgb(243,243,243);
+        }
+        #container{
+            width: 320px; 
+            border: 2px solid black;  
+            margin: auto;   
+            margin-top: 80px; 
+            font-size: 20px;  
+            background-color: white;
+            font-family: Calibri Light; 
+            padding: 30px;
+            border: 0px; 
+            border-radius: 20px;
+            box-shadow: rgba(58, 58, 58, 0.2) 0px 2px 8px 0px;
+        } 
+        h1{
+            font-family: Futura;
+            font-size: xx-large;
+            font-weight: 800;
+        }
+        #img{
+            width: 100%;
+        }
+        #number,#goo{
+            width: 100%;
+            margin: 10px 0px;
+            padding: 10px;
+            cursor: pointer ; 
+            border-radius: 5px;
+        }
+        #number{
+            background-color: rgb(252,39,121) ;
+            color: white;  
+            border: 0px;
+        }
+        #goo{
+            background-color: white;
+            border: 0.5px solid black;  
+            font-family: Arial ;   
+            font-weight: 700 ; 
+            font-size: 20px;
+        }
+
+        #num{
+            margin-left: 10px ;   
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <h1>Sign in</h1>
+        <h5> To quickly find your favourites items, saved addresses and payments. </h5>  
+        <hr>
+        <h5> Register and earn 2000 reward points </h5>
+        <img src="https://media.istockphoto.com/vectors/gift-box-isolated-on-white-surprise-gift-vector-id1164906089?k=20&m=1164906089&s=612x612&w=0&h=Ca6bs_UdPpZ-XDcbMOUU72ZW6E1qre6crAJf9PxCCA8=" id="img" alt="img">
+        <button id="number">  Enter Phone Number or Email  </button> 
+        <br> 
+        <button id="goo"><img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" width="15px" alt="" > <span id="num"> Google </span> </button>  
+        <br>
+        <h6>By continuing, you agree that you have read and accept our T&Cs and Privacy Policy.</h6>
+    </div>
+</body>
+</html>
+
+<script>
+
+    var num = document.querySelector("#goo"); 
+    num.addEventListener("click",function go (){
+        window.location.href = " "
+    })
+</script>
