@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Payment Mode</title>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <style>
@@ -94,6 +94,9 @@
             padding: 10px 20px;
             margin: auto;
             flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
 
         #par2 {
@@ -109,6 +112,7 @@
             flex-wrap: wrap;
             justify-content: space-around;
             padding: 20px;
+            width: 50%;
         }
 
         #pic2>div {
@@ -116,7 +120,7 @@
             /* margin: 10px; */
             text-align: center;
             width: 160px;
-            height: 230px;
+            height: 250px;
             display: flex;
             flex-direction: column;
             justify-content: space-between;
@@ -125,6 +129,7 @@
             padding: 7%;
             padding-top: 4%;
             padding-bottom: 4%;
+            border-radius: 15px;
         }
 
         #pic2>div>img {
@@ -143,7 +148,7 @@
         }
 
         #but1 {
-            width: 100%;
+            width: 30%;
             font-size: large;
             border: 0px;
             padding: 15px;
@@ -180,24 +185,11 @@
         <div id="part2">
             <div id="pic2">
                 <div>
-                    <img src="https://www.thehindubusinessline.com/migration_catalog/6p42cy/article23255146.ece/alternates/FREE_320/UPIlogojpg"
-                        class="upiPicture" alt="">
-                    <h3> UPI Payment</h3>
-                    <input type="radio" name="sec" id="">
-                </div>
-                <div>
                     <img src="https://logowik.com/content/uploads/images/787_mastercard.jpg" alt="">
                     <h3> Card Payment </h3>
-                    <input type="radio" name="sec" id="">
-                </div>
-                <div>
-                    <img src="https://okcredit-blog-images-prod.storage.googleapis.com/2021/05/cashondelivery1.jpg"
-                        alt="">
-                    <h3> Cash on Delivery </h3>
-                    <input type="radio" name="sec" id="">
                 </div>
             </div>
-            <button id="but1"> Complete Payment </button>
+            <button id="but1"> Enter Card Details </button>
         </div>
     </div>
     </div>
@@ -211,8 +203,7 @@
     document.querySelector("#but1").addEventListener("click", pa1);
 
     function pa1() {
-        alert("Payment Successful!");
-        window.location.href = "index.html"
+        window.location.href = "payment.html"
     }
 
 
