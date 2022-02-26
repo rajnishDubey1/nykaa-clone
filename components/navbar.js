@@ -10,7 +10,7 @@ function navbar() {
 <div id="nav2">
     <div id="na1">
         <img src="https://gumlet.assettype.com/afaqs%2F2020-06%2Fe58cd071-0f27-4002-ba7a-14a60cca9a3c%2Fnykaa.png?format=webp&dpr=1.0&q=70&w=700"
-            alt="">
+            alt="" onclick = "window.location.href = 'index.html'" style = "cursor: pointer">
         <h2> CATEGORIES </h2>
         <h2> BRANDS </h2>
         <h2> NYKAA FASHION </h2>
@@ -22,7 +22,7 @@ function navbar() {
         <input type="search" id="search-text" placeholder="Search on Nykaa">
     </div>
     <div id="na3">
-        <i class="fa fa-user" style="font-size:20px" onclick = "window.location.href = 'login.html'" id = "account-nav"> <span>Account </span></i>
+        <i class="fa fa-user" style="font-size:20px" onclick = "window.location.href = 'signup.html'" id = "account-nav"> <span>Account </span></i>
         <i class="fa fa-shopping-bag" style="font-size:20px" onclick = "window.location.href = 'cart.html'" id="shopping-bag-nav"> </i>
     </div>
 
