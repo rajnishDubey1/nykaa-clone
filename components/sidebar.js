@@ -11,12 +11,12 @@ function sidebar() {
             data-bs-parent="#accordionExample">
             <div class="accordion-body">
                 <ul id="sortBy">
+                <li id = "l2h">Price: Low To High</li>
+                <li id = "h2l">Price: High To Low</li>
                     <li>Popularity</li>
                     <li>Name</li>
 
                     <li>Top Rated</li>
-                    <li>Price: Low To High</li>
-                    <li>Price: High To Low</li>
 
 
 

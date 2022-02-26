@@ -2,6 +2,7 @@ let cart = JSON.parse(localStorage.getItem('cart')) || [];
 console.log(cart);
 let appendData = (data) => {
     let cont = document.getElementById('container')
+    cont.innerHTML = ''
 
     data.map(el => {
 

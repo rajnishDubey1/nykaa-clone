@@ -166,3 +166,24 @@ let data = [
   ]
 
 appendData(data);
+
+let low = document.getElementById('l2h');
+
+low.addEventListener('click', () => {
+    
+    data.sort((a,b) => {
+        return a.price-b.price;
+    })
+    appendData(data)
+})
+
+let high = document.getElementById('h2l')
+
+high.addEventListener('click', () => {
+
+    data.sort((a,b) => {
+        return b.price-a.price;
+    })
+    appendData(data)
+
+})
