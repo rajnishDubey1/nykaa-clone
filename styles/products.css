@@ -38,6 +38,12 @@ html {
   justify-content: space-between;
   /* border-collapse: collapse; */
 }
+#mainCard:hover {
+  /* font-size: 1.05em; */
+  transform: scale(1.009);
+  transition: 200ms ease-out;
+  box-shadow: rgba(91, 91, 91, 0.5) 0px 0px 2px 2px;
+}
 
 #btnDiv {
   display: flex;

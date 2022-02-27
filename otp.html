@@ -12,14 +12,21 @@
             margin: 0;
             padding: 0;
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            /* margin: auto; */
         }
+        
 
         form {
             margin-top: 10%;
             display: flex;
             flex-direction: column;
             align-items: center;
-            justify-items: center;
+            justify-content: space-around;
+            border: 1px solid #ffd5e5;
+            width: 30%;
+            margin: auto;
+            margin-top: 10%;
+            height: 400px;
         }
 
         form * {
@@ -45,12 +52,14 @@
 </head>
 
 <body>
+    <div id="main">
     <form>
         <h1>Please Enter Your OTP</h1>
 
-        <input type="number" class="otp" placeholder="Enter OTP" />
+        <input type="text" class="otp" placeholder="Enter OTP" />
         <input type="submit" id="submit" />
     </form>
+</div>
 </body>
 
 </html>
